@@ -1,0 +1,42 @@
+:root {
+  --main-color: #37517e;
+}
+.container-fluid {
+  background-color: var(--main-color);
+}
+.animated-img {
+  animation: move 2s linear infinite alternate;
+}
+@keyframes move {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10%);
+  }
+}
+.gray {
+  width: 13%;
+  height: 3px;
+  background-color: lightgrey;
+  margin: auto;
+  position: relative;
+}
+.blue {
+  width: 40%;
+  height: 3px;
+  background-color: var(--bs-info);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.text-blue {
+  color: var(--main-color);
+}
+.front-section a {
+  color: white !important;
+}
+.dropdown-menu a {
+  color: black !important;
+}
